@@ -1,0 +1,29 @@
+// We can combine multiple commands into a function, and then 
+// call that function to execute those commands. Some functions 
+// take a parameter and then that parameter is used like a 
+// variable in the function.
+
+var todos = ['item 1', 'item 2', 'item3'];
+
+// It should have a function to display todos.
+function displayTodos() {
+  console.log('My todos:', todos);
+}
+
+// It should have a function to add todos.
+function addTodo(todo) {
+  todos.push(todo);
+  displayTodos();
+}
+
+// It should have a function to change todos.
+function changeTodo(position, newValue) {
+  todos[position] = newValue;
+  displayTodos();
+}
+
+// It should have a function to delete todos.
+function deleteTodo(position) {
+	todos.splice(position, 1);
+    displayTodos();
+}
