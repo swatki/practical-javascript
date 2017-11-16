@@ -1,0 +1,23 @@
+// It should have a place to store todos. This command is to set a variable (var) 
+// with the name “todos” - in this case it is an array that contains 3 items.
+
+var todos = [‘item 1’, ‘item 2’, ‘item 3’]
+
+// It should have a way to display todos. This prints a message to the console.
+// It can be text or variables, etc.
+
+console.log(‘My todos:’, todos)
+
+// It should have a way to add new todos. The push command adds an item to the 
+// end of the array.
+
+todos.push(‘new todo’)
+
+// It should have a way to change a todo. Assign a value to a particular item in 
+// the array, overwriting any old value that was there.
+
+todos[0] = ‘Changed!’
+
+It should have a way to delete a todo
+
+todos.splice(0, 1)
